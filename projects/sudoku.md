@@ -17,4 +17,5 @@ It works using recursion as it will call a function to fill the squares and then
 find the correct solution. This assignment was very interesting and helped me learn about recursion.
 
 Example of it solving a sudoku puzzle:
-<img width="474" alt="image" src=".../img/image_2024-01-17_173626334.png">
+
+<img width="474" alt="image" src=".../img/image_2024-01-17_173626334.png" class="img-thumbnail">
