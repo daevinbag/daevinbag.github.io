@@ -4,7 +4,7 @@
     "label": "Student",
     "picture": "https://github.com/daevinbag.png",
     "email": "daevinb@hawaii.edu",
-    "phone": "808-518-8797",
+    "phone": "",
     "website": "https://daevinbag.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2026.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
@@ -25,7 +25,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Git/GitHub" ]
+      "keywords": [ "Windows, Git/GitHub" ]
     }
   ],
   "education": [
@@ -42,7 +42,7 @@
   "awards": [
     {
       "title": "B+ Scholarship",
-      "date": "2013-Present",
+      "date": "2022-Present",
       "awarder": "State of Hawaii",
       "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
     }
