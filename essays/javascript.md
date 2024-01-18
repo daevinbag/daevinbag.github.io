@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "The difficult things will always be difficult"
+title: "Is Javascript the same as Java?"
 # All dates must be YYYY-MM-DD format!
 date: 2024-01-17
 published: true
