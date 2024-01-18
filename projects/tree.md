@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/image_2024-01-17_175840891.png 
+image: img/image_2024-01-17_182528910.png
 title: "Binary Tree Search"
 date: 2023
 published: true
