@@ -9,9 +9,8 @@ labels:
   - JavaScript
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
+<img width="200px" class="rounded float-start pe-4" src="../img/image_2024-01-17_163151519.png">
 
-*Difficulty: a thing that is hard to accomplish, deal with, or understand.*
 
 When first hearing about Javascript the first question that I had was “Is it just the same as Java?”. I quickly learned that they were not quite the same as I went through Javascript exercises that introduced me to the differences between them. This was quite troubling for me as although I am a bit familiar with Java, Javascript would be difficult for me to understand and learn if they differed greatly. However, I found that although they differ, Javascript may be not all too difficult to learn excluding some concepts that I have a hard time grasping as it doesn’t require some things Java does. One example of this is that in Javascript you don’t have to declare the type of your variable whereas in Java you have to make certain specifications such as int or string depending on what type you want. 
 
