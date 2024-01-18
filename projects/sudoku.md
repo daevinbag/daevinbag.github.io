@@ -18,4 +18,4 @@ find the correct solution. This assignment was very interesting and helped me le
 
 Example of it solving a sudoku puzzle:
 
-<img width="474" alt="image" src=".../img/image_2024-01-17_173626334.png" class="img-thumbnail">
+<img class="img-fluid" src="../img/image_2024-01-17_173626334.png">
