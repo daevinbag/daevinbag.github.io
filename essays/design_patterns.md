@@ -4,7 +4,7 @@ type: essay
 title: "Can Someone Else Do it for Me?"
 # All dates must be YYYY-MM-DD format!
 date: 2024-04-25
-published: true
+published: false
 labels:
   - Computer Science
 ---
