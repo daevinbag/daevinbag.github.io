@@ -11,7 +11,7 @@ labels:
 summary: "A Software Engineering class project that turns professors in collectable cards."
 ---
 
-<img class="img-fluid" src="../img/image_2024-05-09_162439601.png">
+<img width="400px" class="img-fluid" src="../img/image_2024-05-09_162439601.png">
 
 Rainbow Cards is a website that I worked on with a group of classmates for a Software Engineering class. It is designed to have cards for professors of UH Manoa so that students can learn fun facts about their professors.
 Students can obtain cards from their professors when taking their course, or they can obtain other cards as well by trading with other students. 
