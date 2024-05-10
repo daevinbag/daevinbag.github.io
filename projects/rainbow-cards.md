@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/image_2024-01-17_182528910.png
+image: img/rainbow-cards-logo.png
 title: "Rainbow Cards"
 date: 2024
 published: true
