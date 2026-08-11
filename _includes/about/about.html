@@ -1,47 +1,87 @@
-<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img width="300px" src="{{ site.data.bio.basics.picture }}" class="d-block mx-auto rounded-circle">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>boot demo — portfolio</title>
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <div id="boot">
+    <div id="boot-box">
+      <div id="boot-log"></div>
+      <div id="boot-bar-row">
+        <span id="boot-percent">0%</span>
+        <div id="boot-bar-track"><div id="boot-bar-fill"></div></div>
       </div>
-      <div class="col-lg-8">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
-        <p class="lead text-center">{{ site.data.bio.basics.label }}</p>
-        <p class="lead">{{ site.data.bio.basics.summary }}</p>
-        <hr class="my-4">
-        <p class="lead m-0">
-          Interests:
-          {% for interest in site.data.bio.interests %}
-          {{ interest.name }}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
-        </p>
-        <hr class="my-4">
-        <div class="row">
+    </div>
+    <div id="boot-skip">press any key to skip</div>
+  </div>
 
-          {% if site.data.bio.basics.website %}
-            {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name='house' %}
+  <div class="layout">
+    <div class="content-col">
+      <header>
+        <div class="eyebrow">/home/dev — status: online</div>
+        <h1>Daevin Bagcal</h1>
+        <p class="lede">Graduated from the University of Hawaii at Manoa in Spring 2026 with a degree in Computer Science.</p>
+      </header>
+
+      <main>
+        <h2>Experience</h2>
+        <div class="project" data-project="labassistant">
+          <img class="project-thumb" src="../../img/uhmanoa.png" alt="Lab Assistant thumbnail">
+          <div class="project-body">
+            <div>
+              <h3>Lab Assistant</h3>
+              <h3 style="font-style: italic;">University of Hawaii at Manoa, 2025-2026</h3>
+              <p>Created a program that could be used to analyze image data. Primarily used in calculating average height in one image or across multiple images.</p>
             </div>
-          {% endif %}
+            <div class="tag">python · data analysis · image processing</div>
+          </div>
+        </div>
 
-          {% if site.data.bio.basics.email %}
-            {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name='envelope' %}
+        <h2>Projects</h2>
+        <div class="project" data-project="raytracer">
+          <img class="project-thumb" src="../../img/raytraceweekend.png" alt="Raytracer thumbnail">
+          <div class="project-body">
+            <div>
+              <h3>Raytracer (in one weekend)</h3>
+              <p>A Ray Tracer implemented in Rust.</p>
             </div>
-          {% endif %}
+            <div class="tag">rust · 3d graphics</div>
+          </div>
+        </div>
+      </main>
+    </div>
 
-          {% for profile in site.data.bio.basics.profiles %}
-            {% capture url %}{{ profile.url }}{% endcapture %}
-            {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-            <div class="col text-center">
-              {% include about/social.html url=url name=name %}
-            </div>
-          {% endfor %}
+    <div class="holo-col">
+      <div id="holo">
+        <div class="lines"></div>
+        <div class="holo-corner-tr"></div>
+        <div class="holo-corner-bl"></div>
+        <div id="holo-close">◂ back</div>
+        <div id="holo-inner">
+          <div id="holo-status"><span><span class="dot"></span>online</span><span id="holo-status-label">idle</span></div>
 
+          <div id="holo-idle">
+            <div class="glyph">◈</div>
+            select a project to view details
+          </div>
+
+          <div id="holo-content">
+            <h3 id="holo-title"></h3>
+            <div class="holo-tag" id="holo-tagline"></div>
+            <div id="holo-media"></div>
+            <div class="holo-desc" id="holo-desc"></div>
+            <div class="holo-stats" id="holo-stats"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <script src="../../js/boot.js"></script>
+  <script src="../../js/holo.js"></script>
+</body>
+</html>
