@@ -5,7 +5,6 @@
   const pctEl = document.getElementById('boot-percent');
 
  
-  // Each entry fires once progress crosses its threshold percent
   // Edit the values on the right to personalize the boot log
   const log = [
     { at: 0,  text: '> initializing portfolio.exe' },
@@ -28,7 +27,6 @@
   function tick(now) {
     if (finished) return;
     const elapsed = now - start;
-    // ease-out curve so it feels snappy at the start, settles at the end
     const t = Math.min(elapsed / DURATION, 1);
     progress = Math.round((1 - Math.pow(1 - t, 3)) * 100);
  
@@ -45,14 +43,13 @@
     if (t < 1) {
       requestAnimationFrame(tick);
     } else {
-      setTimeout(finish, 250); // brief pause at 100% before dismissing
+      setTimeout(finish, 250); 
     }
   }
   
   function finish() {
     if (finished) return;
     finished = true;
-    //sessionStorage.setItem('bootSeen', '1');
     boot.classList.add('hidden');
   }
  
@@ -61,7 +58,6 @@
   window.addEventListener('keydown', skip, { once: true });
  
   requestAnimationFrame(tick);
- 
-  // Hard safety cap: never block longer than 1.6s total
+  // dont let load last for more than this time
   setTimeout(finish, 1600);
 })();
