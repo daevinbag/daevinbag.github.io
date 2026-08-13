@@ -1,6 +1,4 @@
 (function () {
-  // Data shown in the hologram panel per project.
-  // Keyed by the data-project value on each .project element.
   const projects = {
     about: {
       title: 'Daevin Bagcal',
@@ -60,9 +58,7 @@
  
     holoTitle.textContent = p.title;
     holoTagline.textContent = p.tagline;
- 
-    // Media slot: renders an <img> or <video> if the project defines one,
-    // otherwise stays hidden so the layout collapses back down cleanly.
+
     holoMedia.innerHTML = '';
     if (p.media) {
       let el;
@@ -91,16 +87,13 @@
     holoStatusLabel.textContent = key;
     holoClose.style.display = (key === 'about') ? 'none' : '';
  
-    // retrigger the flicker-in animation (skip on first paint if requested)
     if (!opts.skipFlicker) {
       holoContent.classList.remove('flicker');
-      void holoContent.offsetWidth; // force reflow so the animation restarts
+      void holoContent.offsetWidth;
       holoContent.classList.add('flicker');
     }
   }
  
-  // Close button returns to the "about" view rather than an empty state,
-  // so the panel never shows nothing.
   function reset() {
     showProject('about');
   }
@@ -116,6 +109,5 @@
     reset();
   });
  
-  // Populate the panel with "about" info as soon as the page loads.
   showProject('about', { skipFlicker: true });
 })();
