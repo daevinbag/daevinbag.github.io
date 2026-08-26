@@ -20,8 +20,14 @@
     coffeerun: {
       title: 'CoffeeRun',
       tagline: 'FLUTTER · FIREBASE · APP',
-      desc: 'A Strava-like application for tracking activity and earning rewards. Developed using Flutter and Firebase, the app allows users to start activities through the app (walking, running, biking, etc.) and earn rewards at participating businesses. Working on this project helped me learn about working with a team of developers and meeting the needs of a sponsor while keeping realistic goals. This app differentiates itself from other ativity apps like Strava by focusing on the local scenery of the area that you are using the app (in this case Hawaii). A sample of the app is available to view <a href="https://coffeerun-b94ae.web.app/>" target="_blank">here</a>.',
+      desc: 'A Strava-like application for tracking activity and earning rewards. Developed using Flutter and Firebase, the app allows users to start activities through the app (walking, running, biking, etc.) and earn rewards at participating businesses. Working on this project helped me learn about working with a team of developers and meeting the needs of a sponsor while keeping realistic goals. This app differentiates itself from other ativity apps like Strava by focusing on the local scenery of the area that you are using the app (in this case Hawaii). A sample of the app is available to view <a href="https://coffeerun-b94ae.web.app/" target="_blank">here</a>.',
       media: { type: 'image', src: '../../img/coffeerun.jpg', alt: 'CoffeeRun demo' },
+    },
+    meowstrum: {
+      title: 'Meowstrum',
+      tagline: 'UNITY · GAME · BOSS RUSH 2025',
+      desc: 'A cat pirate crew enters a whirlpool! Fight dreadful monsters in the eye of the storm, and escape to treasure in this short bullet-hell shooter! Created for the Boss Rush Game Jam 2025 I helped create this game with a small team of people using Unity. I programmed the shark boss that appears in the game along with working on UI and cutscenes. You can download the game <a href="https://nachocafe.itch.io/meowstrum" target="_blank">here</a>.',
+      media: { type: 'image', src: '../../img/meowstrum_logo.png', alt: 'Meowstrum' },
     },
   };
  
